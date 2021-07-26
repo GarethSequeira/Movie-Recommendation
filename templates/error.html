@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="/static/icon.png">
+  <title>RecFlix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=10, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">-->
+</head>
+
+
+<body>
+
+    <style>
+        body {
+          background-image: url('/static/background.svg');
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-size: cover;
+        }
+    </style>
+
+
+<!---------------- Navigation Bar----------->
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a href="https://rec-flix.herokuapp.com/" class="navbar-brand">Home</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <!-- Links -->
+        <div class="navbar-nav">
+            <a href="https://www.garethsequeira.com/" class="navbar-brand">About</a>
+            <a href="https://github.com/garethsequeira/" class="navbar-brand">GitHub</a>
+            <a href="https://www.linkedin.com/in/garethsequeira/" class="navbar-brand">LinkedIn</a>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-------------------------------- Search box--------------------->
+<br><br><br>
+<div class="container">
+
+    <img src="/static/home.png" alt="RecFlix" width="100%"/>
+
+<br><br><br>
+<div class="container">
+    <h2 class="font-weight-bold mb-1"><p style="font-family:Tahoma">RecFlix</h2>
+    <p>Get Recommendations Similar To Your Favourite Flix!</p>
+<!-- User Input Search Bar -->
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label for="Age">Search Movie:</label>
+                <input type="string" step="1" class="form-control" placeholder="Ex: Avengers, Inception" id="Age" name="search" required><br>
+            <div class="button-group" style="margin-top:15px;">
+                <button type="submit" name="submit" class="btn btn-danger">Search</button>
+            </div>
+            </div>
+        </form>
+</div>
+
+
+<!-------------Error Message show here--------------------->
+<br>
+<div class="container">
+    <div class="alert alert-info" role="alert">
+      <h4 class="alert-heading">Oops!</h4>
+      <br>
+      <img src="/static/oops.png" alt="RecFlix" width="20%"/>
+      <br><br>
+      <p>Looks Like Something Went Wrong.</p>
+      <p>Movie Not Found in Our Database. </p>
+      <p>Make Sure the Movie Name is Correct.</p>
+    </div>
+    <br><br>
+</div>
+</body>
