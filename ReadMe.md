@@ -1,5 +1,5 @@
 # RecFlix
-<img src="https://github.com/GarethSequeira/Movie-Recommendation/blob/main/static/icon.png" width="2%" > https://rec-flix.herokuapp.com/  
+<img src="https://github.com/GarethSequeira/Movie-Recommendation/blob/main/static/icon.png" width="20" > https://rec-flix.herokuapp.com/  
 <br>  
 
 ## Movie Recommendation
